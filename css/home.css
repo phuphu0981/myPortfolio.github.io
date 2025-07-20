@@ -1,0 +1,120 @@
+/* Home Page Specific Styles */
+#home {
+  text-align: center;
+  padding: 60px 20px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  line-height: 1.3;
+}
+
+body.dark-mode .hero h1 {
+  color: #ecf0f1;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #7f8c8d;
+}
+
+body.dark-mode .hero p {
+  color: #bdc3c7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #4a6fa5;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s;
+  border: 2px solid #4a6fa5;
+}
+
+.cta-button:hover {
+  background-color: transparent;
+  color: #4a6fa5;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .cta-button:hover {
+  color: #6d8cc0;
+  border-color: #6d8cc0;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: #4a6fa5;
+  border: 2px solid #4a6fa5;
+}
+
+body.dark-mode .cta-button.secondary {
+  color: #6d8cc0;
+  border-color: #6d8cc0;
+}
+
+.cta-button.secondary:hover {
+  background-color: #4a6fa5;
+  color: white;
+}
+
+/* Typing effect */
+#intro-headline {
+  min-height: 1.5em;
+  display: inline-block;
+  border-right: 3px solid #4a6fa5;
+  padding-right: 10px;
+  animation: blink-caret 0.75s step-end infinite;
+  margin: 10px 0;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #4a6fa5; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}

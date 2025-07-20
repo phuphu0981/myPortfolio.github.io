@@ -3,84 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of a Backend Developer">
   <title>Backend Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
 </head>
 <body>
   <!-- Dark Mode Toggle -->
   <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
   
   <!-- Navigation -->
-  <nav>
+  <nav style="height: 60px;">
     <ul>
-      <li><a href="#about" class="nav-link active">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+      <li><a href="#" data-page="about" class="nav-link">About</a></li>
+      <li><a href="#" data-page="projects" class="nav-link">Projects</a></li>
+      <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Intro Section with Typing Effect -->
-    <section class="intro">
-      <h1 id="intro-headline"></h1>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <img src="assets/profile.jpg" alt="Profile Image" class="profile-img" />
-        <p>Hello! I'm a backend developer specializing in Laravel, Node.js, and MySQL, with front-end skills in React, HTML, and CSS. I love creating efficient and scalable web applications.</p>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-item" title="Laravel">
-          <img src="assets/laravel.png" alt="Laravel" class="skill-icon" />
-        </div>
-        <div class="skill-item" title="Node.js">
-          <img src="assets/nodejs.png" alt="Node.js" class="skill-icon" />
-        </div>
-        <div class="skill-item" title="MySQL">
-          <img src="assets/mysql.png" alt="MySQL" class="skill-icon" />
-        </div>
-        <div class="skill-item" title="React">
-          <img src="assets/react.png" alt="React" class="skill-icon" />
-        </div>
-        <!-- Add more skills/icons as needed -->
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>Project One</h3>
-          <p>A Laravel-based CMS for managing content efficiently.</p>
-        </div>
-        <div class="project-card">
-          <h3>Project Two</h3>
-          <p>A Node.js REST API for e-commerce backend.</p>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: developer@example.com</p>
-      <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    </section>
+  <!-- Main Content will be loaded here -->
+  <main id="main-content">
+    <!-- Nội dung sẽ được tải động vào đây -->
   </main>
 
   <!-- Include JavaScript -->
-  <script src="mode.js"></script>
+  <script src="./js/main.js" type="module"></script>
+  
+  <!-- Fallback nếu JavaScript bị tắt -->
+  <noscript>
+    <div style="text-align: center; padding: 20px; background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; margin: 20px;">
+      <h2>JavaScript is disabled</h2>
+      <p>This website requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+    </div>
+  </noscript>
 </body>
 </html>

@@ -1,0 +1,130 @@
+/* About Page Specific Styles */
+#about {
+  padding: 60px 0;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: translateY(-5px);
+}
+
+.about-content h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.about-content h2::after {
+  left: 0;
+  transform: translateX(0);
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.8;
+}
+
+body.dark-mode .about-content p {
+  color: #ddd;
+}
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+body.dark-mode .skills h3 {
+  color: #ecf0f1;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.skill-item {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s;
+  border-left: 3px solid #4a6fa5;
+}
+
+body.dark-mode .skill-item {
+  background-color: #2d3436;
+  color: #ecf0f1;
+  border-left-color: #6d8cc0;
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  
+  .about-content h2 {
+    text-align: center;
+  }
+  
+  .about-content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+/* Animation for about section */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-content {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.about-image {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
