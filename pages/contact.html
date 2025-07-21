@@ -1,10 +1,76 @@
 <!-- Contact Page -->
 <div id="contact" class="page">
   <section class="section">
-    <h2>Contact</h2>
-    <div class="contact-info">
-      <p>Email: developer@example.com</p>
-      <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    <h2>Liên hệ với tôi</h2>
+    
+    <!-- Phần icon liên hệ -->
+    <div class="contact-icons">
+      <a href="tel:+84912345678" class="contact-icon" aria-label="Gọi điện thoại">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="mailto:phuphu0981@gmail.com" class="contact-icon" aria-label="Gửi email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    
+    <!-- Phần thông tin cá nhân -->
+    <div class="contact-details">
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Địa chỉ</h3>
+            <p>Hà Nội, Việt Nam</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email</h3>
+            <p>phuphu0981@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3>Điện thoại</h3>
+            <p>+84 912 345 678</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h3>Gửi tin nhắn cho tôi</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Họ và tên" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Tiêu đề">
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Nội dung tin nhắn" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Gửi tin nhắn</button>
+        </form>
+      </div>
     </div>
   </section>
 </div>
+
+<!-- Thêm Font Awesome cho các icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
