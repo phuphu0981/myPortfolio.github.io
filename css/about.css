@@ -140,26 +140,39 @@ h4 {
 }
 
 /* Dark mode styles */
+body.dark-mode #about {
+  background-color: #1a1a1a;
+}
+
 body.dark-mode .about-info h3,
 body.dark-mode .education-details h4,
-body.dark-mode .education-item strong {
+body.dark-mode .education-item strong,
+body.dark-mode h4 {
   color: #ecf0f1;
 }
 
 body.dark-mode .about-info p,
 body.dark-mode .education-item p,
-body.dark-mode .activities-list li,
 body.dark-mode .awards-list li {
-  color: #ddd;
+  color: #b0b0b0;
 }
 
-body.dark-mode .education-item {
-  background: #2d3436;
-  border-left-color: #6d8cc0;
+body.dark-mode .education-details {
+  background: #2d2d2d;
+  border: 1px solid #3a3a3a;
 }
 
-body.dark-mode .education-details h4 {
-  border-bottom-color: #444;
+body.dark-mode .about-image::before {
+  border-color: #6d8cc0;
+}
+
+body.dark-mode .about-info {
+  color: #e0e0e0;
+}
+
+body.dark-mode .about-image img {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  filter: brightness(0.9);
 }
 
 /* Animation for about section */
